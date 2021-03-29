@@ -1,5 +1,8 @@
 var init = function (window) {
     'use strict';
+   
+    
+
     var 
         draw = window.opspark.draw,
         physikz = window.opspark.racket.physikz,
@@ -59,8 +62,9 @@ var init = function (window) {
             for (var i = 0; i < circles.length; i++) {
                 var eachValue = circles[i];
     
-                physikz.updatePosition(eachValue);    
-                game.checkCirclePosition(eachValue);  
+                physikz.updatePosition(eachValue)    
+                game.checkCirclePosition(eachValue)
+                  
             }
         
         }
