@@ -1,0 +1,88 @@
+
+body {
+    background-color: rgb(15, 0, 24);
+  }
+  
+  #board {
+    /*appearance*/
+    width: 50%;
+    height: 600px;
+    border: 3px solid rgb(175, 126, 240);
+    background-color: rgb(15, 0, 24);
+    
+    /*positioning*/
+    position: relative;
+    margin: auto;
+  }
+  
+  #leftPaddle {
+    /*appearance*/
+    background-color: rgb(175, 126, 240);
+    width: 20px;
+    height: 80px;
+    
+    /*positioning*/
+    position: absolute;
+    left: 10px;
+    top: 450px;
+  }
+  #rightPaddle {
+    /*appearance*/
+    background-color: rgb(175, 126, 240);
+    width: 20px;
+    height: 80px;
+    
+    /*positioning*/
+    position: absolute;
+    left: 970px;
+    top: 450px;
+  }
+  #ball {
+    /*appearance*/
+    background-color: rgb(175, 126, 240);
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    
+    /*positioning*/
+    position: absolute;
+    left: 480px;
+    top: 280px;
+  }
+
+  #scoreLeft {
+    font-family: "Audiowide", sans-serif;
+    font-size: 5vw;
+    color: rgb(175, 126, 240);
+    position: relative;
+    left: 70px;
+    top: 20px;
+  }
+
+  #scoreRight {
+    font-family: "Audiowide", sans-serif;
+    font-size: 5vw;
+    color:rgb(175, 126, 240);
+    position: absolute;
+    left: 770px;
+    top: 20px;
+  }
+
+  .font-effect-neon {
+    text-align: left;
+    font-family: "Audiowide", sans-serif;
+    font-size: 5vw;
+    color:rgb(36, 7, 75);
+    position: relative;
+    left: 730px;
+    text-shadow: 0px 0px 100px rgb(94, 5, 146);
+  }
+
+  #resetButton {
+    text-align: left;
+    font-family: "Audiowide", sans-serif;
+    font-size: 3vw;
+    background-color:rgb(175, 126, 240);
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+  }
