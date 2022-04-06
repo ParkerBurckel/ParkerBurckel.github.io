@@ -38,13 +38,7 @@ function runProgram(){
     return instences;
   }
 
-  var head = SnakeBody(
-    "#head",
-    360,
-    360,
-    0,
-    0
-    );
+  var head = SnakeBody("#head", 360, 360, 0, 0);
 
   var apple = {
     id: "#apple",
