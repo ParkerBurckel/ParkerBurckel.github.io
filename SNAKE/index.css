@@ -1,0 +1,59 @@
+
+body {
+  background-color: rgb(15, 0, 24);
+}
+
+#board {
+  width: 720px;
+  height: 720px;
+  border: 3px solid rgb(175, 126, 240);
+  background-color: rgb(15, 0, 24);
+  position: relative;
+  margin: auto;
+}
+
+#head {
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.snake {
+  background-color: lightgreen;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+#apple {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.font-effect-neon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Audiowide", sans-serif;
+  font-size: 4vw;
+  color:rgb(36, 7, 75);
+  position: sticky;
+  text-shadow: 0px 0px 100px rgb(94, 5, 146);
+}
+
+#score {
+  font-family: "Audiowide", sans-serif;
+  font-size: 5vw;
+  color:rgb(175, 126, 240);
+  position: absolute;
+  left: 100;
+  top: 100;
+}
+  
+
+
