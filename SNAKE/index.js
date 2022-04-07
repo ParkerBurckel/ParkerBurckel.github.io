@@ -23,8 +23,6 @@ function runProgram(){
   $("#title").text("S H N A K E");
 
   // Game Item Objects
-  
-  var bodyParts = [head];
 
   function SnakeBody(id, x, y, speedX, speedY){
     var instences = {
@@ -37,8 +35,10 @@ function runProgram(){
     }
     return instences;
   }
-
+  
   var head = SnakeBody("#head", 360, 360, 0, 0);
+
+  var bodyParts = [head];
 
   var apple = {
     id: "#apple",
@@ -62,8 +62,8 @@ function runProgram(){
   by calling this function and executing the code inside.
   */
   function newFrame() {
+    eatSnake();
     snakeEat();
-    
     moveSnake();
     moveObject(head);
     drawObj(apple);
@@ -122,6 +122,16 @@ function runProgram(){
     
     bodyParts.push(bodyPiece);
   }
+
+  
+  function eatSnake(){
+    for( var i = 1; i < bodyParts.length; i++){
+      if(head.x === bodyParts[i].x && head.y === bodyParts[i].y){
+        endGame();
+      }
+    }
+      
+  };
 
   function moveSnake(){
     for(var i = bodyParts.length - 1; i >= 1; i--){
