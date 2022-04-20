@@ -13,21 +13,21 @@ body {
 }
 
 #head {
-  background-color: green;
+  background-color: pink;
   width: 20px;
   height: 20px;
   position: absolute;
 }
 
 .snake {
-  background-color: lightgreen;
+  background-color: rgb(248, 214, 220);
   width: 20px;
   height: 20px;
   position: absolute;
 }
 
 #apple {
-  background-color: red;
+  background-color: crimson;
   width: 20px;
   height: 20px;
   position: absolute;

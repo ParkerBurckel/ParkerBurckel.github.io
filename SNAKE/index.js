@@ -69,7 +69,6 @@ function runProgram(){
     drawObj(apple);
     wallCollision(head);
     drawScore();
-    
   }
   
   /* 
